@@ -1,6 +1,7 @@
 // image title author and review star
 import React from 'react';
 import { View, StyleSheet, Image, Text, StatusBar } from 'react-native';
+import Star from './Star';
 
 const BookInfo = () => {
     return (
@@ -15,6 +16,7 @@ const BookInfo = () => {
             <View style={styles.infoContainer}>
                 <Text style={styles.title}>Title of the book that you can read.</Text>
                 <Text style={styles.author}>By: Cloud Strife</Text>
+                <Star starCount={2} halfStar={true}/>
             </View>
         </View>
     )
